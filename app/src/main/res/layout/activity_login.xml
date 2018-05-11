@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kamad"
+    tools:context="com.example.hp.chating.RegisterActivity">
+
+    <include
+        android:id="@+id/Login_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LoginMail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_email"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#000000" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LoginPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginMail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp">>
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_password"
+            android:textColorHint="#000000"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/shape"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>
